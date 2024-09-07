@@ -1,0 +1,43 @@
+<div class="banner">
+    <div class="text">
+        <h1>ENJOYE YOUR MEAL AT A LOW COST</h1>
+        <a href="" [routerLink]="['/menu']">ORDER NOW &rarr;</a>
+    </div>
+</div>
+<div class="container text-center">
+    <h1>SELECT YOUR FOOD BY OUR OWN SIDE</h1>
+    <div class="row">
+        <div class="col-lg-4 mt-4">
+            <div class="inner">
+                <h1>1</h1>
+                <h3>Select Your Food</h3>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <div class="inner">
+                <h1>2</h1>
+                <h3>Select Your Food</h3>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-4 ">
+            <div class="inner">
+                <h1>3</h1>
+                <h3>Select Your Food</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 "*ngFor="let food of FoodData; index as i">
+            <div class="foodBox" *ngIf="i<=3">
+                <img src="{{food.FoodImages}}" alt="">
+                <h1>{{food.FoodName}}</h1>
+                <p>{{food.FoodTags}}</p>
+                <p>{{food.FoodPrice | currency:'PKR'}}</p>
+            </div>
+        </div>
+    </div>
+    <a href="" [routerLink]="['/menu']">ORDER NOW &rarr;</a>
+</div>

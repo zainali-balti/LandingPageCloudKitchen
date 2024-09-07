@@ -1,0 +1,104 @@
+.footer{
+    height: 150px;
+    width: 100%;
+    position: sticky;
+    overflow: hidden;
+    top: 100%;
+    /* margin-top: 700px; */
+}
+.footer .row{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer .col-lg-4{
+    padding-top: 14px;
+    font-size: 20px;
+ 
+    
+}
+.footer .col-lg-4 a{
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+.footer .col-lg-2 {
+    padding-top: 12px;
+
+}
+.footer .col-lg-2 i{
+    padding-left: 20px;
+
+}
+/* Media query for medium screens (Tablets, 768px to 991px) */
+@media screen and (max-width: 991px) {
+    .footer .col-lg-4 {
+        padding-left: 50px;
+        margin-left: 50px;
+        font-size: 18px;
+    }
+    .footer .col-lg-2 {
+        margin-left: 100px;
+    }
+}
+
+/* Media query for screens smaller than 767px (Phones and small tablets) */
+@media screen and (max-width: 767px) {
+    .footer {
+        height: auto; /* Adjust height to fit content */
+    }
+    .footer .row {
+        padding-top: 10px; /* Reduce padding */
+        text-align: center; /* Center-align content */
+    }
+    .footer .col-lg-4 {
+        padding-left: 0;
+        margin-left: 0;
+        font-size: 16px; /* Decrease font size further */
+        margin-bottom: 15px; /* Add space between columns */
+    }
+    .footer .col-lg-4 a {
+        padding-left: 0;
+        display: block; /* Stack links */
+    }
+    .footer .col-lg-2 {
+        margin-left: 0;
+        padding-top: 8px;
+        margin-bottom: 15px; /* Add space between columns */
+    }
+    .footer .col-lg-2 i {
+        padding-left: 0;
+    }
+}
+
+/* Media query for extra small screens (Phones, less than 576px) */
+@media screen and (max-width: 575px) {
+    .footer {
+        height: auto; /* Adjust height to fit content */
+    }
+    .footer .row {
+        padding-top: 10px; /* Reduce padding */
+        text-align: center; /* Center-align content */
+    }
+    .footer .col-lg-4 {
+        padding-left: 0;
+        margin-left: 0;
+        font-size: 14px; /* Decrease font size further */
+        margin-bottom: 15px; /* Add space between columns */
+    }
+    .footer .col-lg-4 a {
+        padding-left: 0;
+        display: block; /* Stack links */
+    }
+    .footer .col-lg-2 {
+        margin-left: 0;
+        padding-top: 8px;
+        margin-bottom: 15px; /* Add space between columns */
+    }
+    .footer .col-lg-2 i {
+        padding-left: 0;
+    }
+}

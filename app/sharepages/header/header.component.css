@@ -1,0 +1,13 @@
+.navbar{
+    background-color: rgb(103, 101, 144);
+}
+.nav-link{
+    font-size: 20px;
+    color: white;
+}
+.navbar-brand{
+    color: white;
+}
+a:hover{
+    background-color: red;
+}
